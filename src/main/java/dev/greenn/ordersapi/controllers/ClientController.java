@@ -2,6 +2,7 @@ package dev.greenn.ordersapi.controllers;
 
 import dev.greenn.ordersapi.domain.Client;
 import dev.greenn.ordersapi.services.ClientService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +22,7 @@ public class ClientController {
     }
 
     @PostMapping
-    public ResponseEntity<Client> addClient(@RequestBody Client client){
+    public ResponseEntity<Client> addClient(@Valid @RequestBody Client client){
         Client savedClient = clientService.addClient(client);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedClient);
 }
