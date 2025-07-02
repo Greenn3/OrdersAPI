@@ -1,0 +1,4 @@
+
+
+Postman do testowania
+https://app.getpostman.com/join-team?invite_code=3af66356781ea50b4976fad020f8fbeddaf92f0833e9d4b36a3f9b31be62d47f&target_code=70f603a8cac2b44d0625352c891bc4ac
